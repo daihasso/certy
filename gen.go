@@ -28,7 +28,7 @@ package certy
 import (
 )
 
-var Certs []byte = {{ .Bundle }}`,
+var Certs = {{ .Bundle }}`,
 )
 
 var masterTemplate = template.Must(
