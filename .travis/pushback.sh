@@ -12,7 +12,7 @@ add_changes_if_exist() {
     git config --global user.name "Travis CI"
     git add generated_certs.go .certshash
     git commit --message "Automated Travis Build: $TRAVIS_BUILD_NUMBER"
-    git push --quiet --set-upstream origin-auto master
+    git push --set-upstream origin-auto master
     echo "Finished pushing back changes to GitHub."
   fi
 }
