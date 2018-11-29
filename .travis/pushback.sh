@@ -13,7 +13,7 @@ add_changes_if_exist() {
     git fetch
     git add generated_certs.go .certshash
     git commit --message "Automated Travis Build: $TRAVIS_BUILD_NUMBER"
-    git push
+    git push origin HEAD:master
     echo "Finished pushing back changes to GitHub."
   fi
 }
