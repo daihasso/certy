@@ -1,6 +1,8 @@
 language: go
 go: 1.x
-script: go generate
+script:
+  - go generate
+  - go test
 after_success: .travis/pushback.sh
 env:
   global:
