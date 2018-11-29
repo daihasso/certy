@@ -11,10 +11,10 @@ docker build.
 
 ## How do I use it?
 That's up to you, dawg!  
-But, here's some obligatory boilerplate.
+But, here's some obligatory boilerplate:
 ``` go
 import (
-	"crypto/x509"
+    "crypto/x509"
     "net/http"
 
     "github.com/daihasso/certy"
@@ -26,22 +26,23 @@ func main() {
     if !ok {
         panic("You lied, these certs don't work at all!")
     }
-	customHTTPClient := &http.Client{
-		Transport: &http.Transport{
-			TLSClientConfig: &tls.Config{RootCAs: pool},
-		},
-	}
+    customHTTPClient := &http.Client{
+        Transport: &http.Transport{
+            TLSClientConfig: &tls.Config{RootCAs: pool},
+        },
+    }
+
     // ... Do cool stuff with certs here
 
     return
 }
 ```
 
-### That's cool, but I like, want these certs EVERYWHERE
+### That's cool, but I like, want these certs __everywhere__
 That's probably dangerous man... But you do you:
 ``` go
 import (
-	"crypto/x509"
+    "crypto/x509"
     "net/http"
 
     "github.com/daihasso/certy"
