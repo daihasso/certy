@@ -1,5 +1,5 @@
 # Certy
-[![Build Status](https://travis-ci.com/DaiHasso/certy.svg?branch=master)](https://travis-ci.com/DaiHasso/certy)
+[![Build Status](https://travis-ci.com/daihasso/certy.svg?branch=master)](https://travis-ci.com/daihasso/certy)
 
 A super, super simple certificate library that simply rips certificates from
 mkcert.org
